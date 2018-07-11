@@ -1,8 +1,12 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#header {
+  height: 230px;
+  background: url(../images/photo.jpg) center /cover;
 }
 
-a {
-  color: #00B7FF;
+table {
+  margin-bottom: 20px;
+}
+
+table, .mdl-card, .mdl-textfield {
+  width: 100%;
 }

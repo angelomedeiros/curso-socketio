@@ -6,7 +6,7 @@ var logger = require('morgan');
 var consign = require('consign');
 var io = require('socket.io')();
 
-require('./app/sockets/socktes');
+require('./app/sockets/socktes')(io);
 
 // 6º
 // var indexRouter = require('./routes/index');
