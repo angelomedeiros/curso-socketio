@@ -12,12 +12,12 @@
           </tr>
         </thead>
         <tbody>
-          <% for ( var i = 0; i < data.lenght ; i++ ) {  %>      
+          <% for ( var i = 0; i < data.length ; i++ ) {  %>      
             <tr>
-              <td class="mdl-data-table__cell--non-numeric"><%= data.nome %></td>
-              <td><%= data.email %></td>
+              <td class="mdl-data-table__cell--non-numeric"><%= data[i].nome %></td>
+              <td><%= data[i].email %></td>
               <td>
-                <a href="/users/<%= data.id %>" class="mdl-button mdl-js-button mdl-button--raised mdl-color--primary mdl-color-text--white"><i class="material-icons">remove_red_eye</i></a>
+                <a href="/users/<%= data[i].id %>" class="mdl-button mdl-js-button mdl-button--raised mdl-color--primary mdl-color-text--white"><i class="material-icons">remove_red_eye</i></a>
               </td>
             </tr>
           <% } %>
